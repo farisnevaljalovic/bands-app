@@ -1,0 +1,83 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(53, 51, 51, 0.747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalBox{
+    width: 60%;
+    background-color: #e2e2e2;
+}
+.modalHeader{
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modalHeader button{
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    background-color: cadetblue;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalBody{
+    padding: 20px;
+}
+.modalBody .bandImg{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.modalBody .bandImg img{
+    width: 120px;
+    height: 80px;
+}
+.modalFooter{
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid gray;
+    text-align: end;
+}
+.modalFooter button{
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 820px) {
+    .modalBox{
+        width: 90%;
+        background-color: #e2e2e2;
+    }
+    .modalBody .bandImg{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .modalBody .bandImg img{
+        width: 85px;
+        height: 70px;
+    }
+}
